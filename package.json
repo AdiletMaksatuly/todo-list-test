@@ -2,6 +2,7 @@
   "name": "todo-list-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://adiletmaksatuly.github.io/todo-list-test",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
