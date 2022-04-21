@@ -1,4 +1,4 @@
-import { Badge, Button, List, Result, Skeleton, Space, Tag } from 'antd';
+import { Button, List, Skeleton, Space, Tag } from 'antd';
 import Text from 'antd/lib/typography/Text';
 import React, { FC } from 'react';
 import { ITodo } from '../../models/ITodo';
@@ -19,17 +19,6 @@ const TodoItem: FC<TodoItemProps> = ({ todo, isTodosLoading, styles, onTodoDone,
         <Button type="primary" danger onClick={() => onDelete(todo.id)}>
             Delete
         </Button>
-    );
-
-    const TodoContent = (
-        <Badge.Ribbon text="Done">
-            <button
-                onClick={() => onTodoDone(todo.id)}
-                className={[styles.todoItemBtn, todo.done ? styles.todoItemBtnDone : ''].join(' ')}
-            >
-                <Text>{todo.text}</Text>
-            </button>
-        </Badge.Ribbon>
     );
 
     return (

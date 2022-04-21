@@ -1,7 +1,5 @@
-import { Button, List, Skeleton } from 'antd';
-import Paragraph from 'antd/lib/typography/Paragraph';
+import { List } from 'antd';
 import Text from 'antd/lib/typography/Text';
-import Title from 'antd/lib/typography/Title';
 import React, { FC } from 'react';
 import { ITodo } from '../../models/ITodo';
 import TodoItem from '../TodoItem';

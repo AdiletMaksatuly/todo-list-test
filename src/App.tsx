@@ -1,6 +1,5 @@
-import { Button, Col, Divider, Layout, Row, Space } from 'antd';
+import { Button, Col, Divider, Layout, Row } from 'antd';
 import { Content } from 'antd/lib/layout/layout';
-import Text from 'antd/lib/typography/Text';
 import Title from 'antd/lib/typography/Title';
 import React, { useEffect, useState } from 'react';
 import './App.css';
@@ -10,7 +9,7 @@ import TodoList from './components/TodoList';
 import { ITodo } from './models/ITodo';
 
 function App() {
-    const savedTodos = JSON.parse(localStorage.getItem('todos') || '');
+    const savedTodos = JSON.parse(localStorage.getItem('todos') || '[]');
     const [todos, setTodos] = useState<ITodo[]>(savedTodos);
     const [isTodoCreating, setIsTodoCreating] = useState<boolean>(false);
 
