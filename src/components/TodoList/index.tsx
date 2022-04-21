@@ -17,8 +17,8 @@ type TodoListProps = {
 
 const styles = {
     todoItem: classes['todo-item'],
+    todoItemDone: classes['todo-item-done'],
     todoItemBtn: classes['todo-item-btn'],
-    todoItemBtnDone: classes['todo-item-btn-done'],
     todoItemText: classes['todo-item-text'],
 };
 
@@ -29,13 +29,6 @@ const TodoList: FC<TodoListProps> = ({
     onTodoDone,
     onDelete,
 }) => {
-    const header = (
-        <>
-            <Title>Your todos</Title>
-            <Button type="primary">Create</Button>
-        </>
-    );
-
     const footer = (
         <Text>
             <b>Don't forget</b> to do 'em!
@@ -47,7 +40,6 @@ const TodoList: FC<TodoListProps> = ({
             itemLayout="vertical"
             size="large"
             dataSource={todos}
-            header={header}
             footer={footer}
             renderItem={(item: ITodo) => (
                 <TodoItem

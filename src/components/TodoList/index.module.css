@@ -11,7 +11,7 @@
     text-align: left;
 }
 
-.todo-item-btn-done {
+.todo-item-done .todo-item-text {
     text-decoration: line-through;
     opacity: 0.5;
 }

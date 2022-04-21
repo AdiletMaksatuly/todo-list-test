@@ -20,6 +20,10 @@
     flex-direction: column;
 }
 
-.todo-list > div:nth-child(2) {
+.todo-list > div:nth-child(1) {
     flex-grow: 1;
+}
+
+.create-todo-btn {
+    align-self: flex-start;
 }
