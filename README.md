@@ -1,5 +1,8 @@
 # Todo List App
 
+This application was developed as a test task for Junior Frontend Developer position. 
+Stack: React, TypeScript.
+
 ## How to run project
 
 You can just open the link: [https://adiletmaksatuly.github.io/todo-list-test/](https://adiletmaksatuly.github.io/todo-list-test/)
